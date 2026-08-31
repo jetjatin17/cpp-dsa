@@ -96,4 +96,6 @@ int main(){
         cout << endl;
         n++;
     }
+    return 0;
 }
+
