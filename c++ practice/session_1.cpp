@@ -96,6 +96,7 @@ int main(){
         cout << endl;
         n++;
     }
+    cout << "changed"; 
     return 0;
 }
 
