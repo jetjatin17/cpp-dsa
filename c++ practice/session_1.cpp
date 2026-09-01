@@ -85,18 +85,30 @@ using namespace std;
 
 // star pattern.
 
+// int main(){
+//     int n=1,m;
+//     while (n<=5){
+//         m=1;
+//         while(m<=n){
+//             cout << m;
+//             m++;
+//         }
+//         cout << endl;
+//         n++;
+//     }
+//     cout << "changed this again"; 
+//     return 0;
+// }
+
+
+
+// string as an input.
+
 int main(){
-    int n=1,m;
-    while (n<=5){
-        m=1;
-        while(m<=n){
-            cout << m;
-            m++;
-        }
-        cout << endl;
-        n++;
-    }
-    cout << "changed this again"; 
+    string name;
+    cout << "enter your name : ";
+    cin >> name;
+    cout << name << " is a very great man." << endl;
     return 0;
 }
 

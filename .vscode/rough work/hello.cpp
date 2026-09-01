@@ -3,6 +3,9 @@ using namespace std;
 
 int main()
 {
-    cout << "hello Jatin Sahrawat" << endl;
+    string name;
+    cout << "name = " << endl;
+    cin >> name;
+    cout << name;
     return 0;
 }

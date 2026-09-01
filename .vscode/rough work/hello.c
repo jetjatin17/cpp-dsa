@@ -3,9 +3,11 @@
 int main()
 {
     int a,b;
-    printf("hello\n");
+    char c;
+    printf("hello : ");
+    scanf("%s",&c);
     printf("enter the numbers : ");
     scanf("%d",&a);
-    printf("%d\n", a);
+    printf("%d and %s\n", a,c);
     return 0;
 }
