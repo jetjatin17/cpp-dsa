@@ -170,16 +170,32 @@ using namespace std;
 
 // factors a number "n".
 
+// int main(){
+//     int n;
+//     string s = " ";
+//     cout << "enter the number : ";
+//     cin >> n;
+//     for (int i = 1; i <=n; i++){
+//         if (n%i == 0){
+//             s += to_string(i) + "  ";
+//         }
+//     }
+//     cout << "the factorials are :" << s << endl;
+//     return 0;
+// }
+
+
+
+
+// factorial n.
+
 int main(){
-    int n;
-    string s = " ";
+    int n,factorial = 1;
     cout << "enter the number : ";
     cin >> n;
-    for (int i = 1; i <=n; i++){
-        if (n%i == 0){
-            s += to_string(i) + "  ";
-        }
+    for (int i = 1; i<=n; i++){
+        factorial = factorial * i;
     }
-    cout << "the factorials are :" << s << endl;
+    cout << "factorial is = " << factorial << endl;
     return 0;
 }
