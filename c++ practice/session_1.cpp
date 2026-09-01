@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 // int main()
@@ -153,14 +154,32 @@ using namespace std;
 
 // square stars  on n input.
 
+// int main(){
+//     int n,i,j;
+//     cout << "enter the square side value : ";
+//     cin >> n;
+//     for (i=1; i<=n; i++){
+//         for (j=1; j<=n; j++){
+//             cout << "*\t";
+//         }cout << endl;
+//     }
+//     return 0;
+// }
+
+
+
+// factors a number "n".
+
 int main(){
-    int n,i,j;
-    cout << "enter the square side value : ";
+    int n;
+    string s = " ";
+    cout << "enter the number : ";
     cin >> n;
-    for (i=1; i<=n; i++){
-        for (j=1; j<=n; j++){
-            cout << "*\t";
-        }cout << endl;
+    for (int i = 1; i <=n; i++){
+        if (n%i == 0){
+            s += to_string(i) + "  ";
+        }
     }
+    cout << "the factorials are :" << s << endl;
     return 0;
 }
