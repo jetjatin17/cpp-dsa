@@ -132,19 +132,35 @@ using namespace std;
 
 // prime check.
 
+// int main(){
+//     int n,i = 0,prime = 1;
+//     cout << "enter the number : ";
+//     cin >> n;
+//     for (i = 2;i <=(n/2); i++){
+//         if (n%i == 0){
+//             prime = 0;
+//             break;
+//         }
+//     }if (prime == 1){
+//         cout << "number is a prime number." << endl;
+//     }else {
+//         cout << "number is not prime." << endl;
+//     }
+//     return 0;
+// }
+
+
+
+// square stars  on n input.
+
 int main(){
-    int n,i = 0,prime = 1;
-    cout << "enter the number : ";
+    int n,i,j;
+    cout << "enter the square side value : ";
     cin >> n;
-    for (i = 2;i <=(n/2); i++){
-        if (n%i == 0){
-            prime = 0;
-            break;
-        }
-    }if (prime == 1){
-        cout << "number is a prime number." << endl;
-    }else {
-        cout << "number is not prime." << endl;
+    for (i=1; i<=n; i++){
+        for (j=1; j<=n; j++){
+            cout << "*\t";
+        }cout << endl;
     }
     return 0;
 }
