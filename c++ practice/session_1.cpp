@@ -105,7 +105,7 @@ using namespace std;
 // string as an input.
 
 // int main(){
-//     string name;
+//     string name;                                   // here we don't use char as it take only 1 input.
 //     cout << "enter your name : ";
 //     cin >> name;
 //     cout << name << " is a very great man." << endl;
@@ -116,15 +116,35 @@ using namespace std;
 
 // for loop in c++.
 
+// int main(){
+//     int n,i,sum = 0;
+//     cout << "enter the number : ";
+//     cin >> n;
+//     for (i = 1; i <= n; i++){
+//         if (!(i%2 == 0)){
+//             sum = sum + i;            
+//         }
+//     }cout << sum;
+//     return 0;
+// }
+
+
+
+// prime check.
+
 int main(){
-    int n,i,sum = 0;
+    int n,i = 0,prime = 1;
     cout << "enter the number : ";
     cin >> n;
-    for (i = 1; i <= n; i++){
-        if (!(i%2 == 0)){
-            cout << i << endl;
-            sum = sum + i;            
+    for (i = 2;i <=(n/2); i++){
+        if (n%i == 0){
+            prime = 0;
+            break;
         }
-    }cout << sum;
+    }if (prime == 1){
+        cout << "number is a prime number." << endl;
+    }else {
+        cout << "number is not prime." << endl;
+    }
     return 0;
 }
