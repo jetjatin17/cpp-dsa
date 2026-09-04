@@ -1,3 +1,13 @@
+// int main(){
+//     int n;
+//     cout << "enter the number : ";
+//     cin >> n;
+
+//     return 0;
+// }
+
+
+
 // for n = 4
 // 1234
 // 1234
@@ -158,14 +168,58 @@ using namespace std;
 // 21
 // 321
 
+// int main(){
+//     int n;
+//     cout << "enter the number : ";
+//     cin >> n;
+//     for (int i =1; i<=n;i++){
+//         for (int j = i; j >=1;j--){
+//             cout << j << " ";
+//         }cout << endl;
+//     }    
+//     return 0;
+// }
+
+
+
+
+// inverse triangle for n = 4.
+// 1111
+//  222
+//   33
+//    4
+
+// int main(){
+//     int n;
+//     cout << "enter the number : ";
+//     cin >> n;
+//     for (int i = 0; i<n; i++){
+//         for (int k = 0; k<i; k++){
+//             cout << " "; 
+//         }
+//         for (int j = 0; j<(n-i) ; j++){
+//             cout << (i+1);
+//         }cout << endl;
+//     }
+//     return 0;
+// }
+
+
+
+
 int main(){
     int n;
     cout << "enter the number : ";
     cin >> n;
-    for (int i =1; i<=n;i++){
-        for (int j = i; j >=1;j--){
-            cout << j << " ";
+    char ch = 'A';
+    for (int i = 0; i<n; i++){
+        for (int k = 0; k<i; k++){
+            cout << " "; 
+        }
+        for (int j = 0; j<(n-i) ; j++){
+            cout << ch;
         }cout << endl;
-    }    
+        ch+=1;
+    }
     return 0;
 }
