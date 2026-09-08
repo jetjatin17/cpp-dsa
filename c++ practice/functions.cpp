@@ -79,26 +79,79 @@ using namespace std;
 
 // nCr, binomial coefficient for n & r.
 
-int factorial(int n){
-    int fact = 1;
-    for (int i=1; i<=n; i++){
-        fact = fact * i;
-    }return fact;
-}
+// int factorial(int n){
+//     int fact = 1;
+//     for (int i=1; i<=n; i++){
+//         fact = fact * i;
+//     }return fact;
+// }
 
-int nCr(int n, int r){
-    int ncr = 0;
-    int factn = factorial(n);
-    int factr = factorial(r);
-    int factnr = factorial(n-r);
-    ncr = (factn)/(factr * factnr);
-    return ncr;
+// int nCr(int n, int r){
+//     int ncr = 0;
+//     int factn = factorial(n);
+//     int factr = factorial(r);
+//     int factnr = factorial(n-r);
+//     ncr = (factn)/(factr * factnr);
+//     return ncr;
+// }
+
+// int main(){
+//     int n,r;
+//     cout  << "enter : ";
+//     cin >> n >> r;
+//     cout << nCr(n,r) << endl;
+//     return 0;
+// }
+
+
+
+
+// switch statement.
+
+// int main(){
+//     int n;
+//     cout << "enter : ";
+//     cin >> n;
+//     switch(n){
+//         case 1:
+//         cout << "monday";
+//         break;
+//         case 2:
+//         cout << "tuesday";
+//         break;
+//         case 3:
+//         cout << "wednesday";
+//         break;
+//         case 4:
+//         cout << "thursday";
+//         break;
+//         case 5:
+//         cout << "friday";
+//         break;
+//         case 6:
+//         cout << "saturday";
+//         break;
+//         case 7:
+//         cout << "sunday";
+//         break;
+//         default:
+//         cout << "enter a current number.";
+//     }
+//     return 0;
+// }
+
+
+
+// pass by reference.
+
+int print(int &n){
+    cout << n << endl;
+    n+=5;
 }
 
 int main(){
-    int n,r;
-    cout  << "enter : ";
-    cin >> n >> r;
-    cout << nCr(n,r) << endl;
+    int m = 10;
+    print(m);
+    cout << endl << m;
     return 0;
 }
