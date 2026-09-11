@@ -144,14 +144,27 @@ using namespace std;
 
 // pass by reference.
 
-int print(int &n){
-    cout << n << endl;
-    n+=5;
-}
+// int print(int &n){
+//     cout << n << endl;
+//     n+=5;
+// }
+
+// int main(){
+//     int m = 10;
+//     print(m);
+//     cout << endl << m;
+//     return 0; 
+// }
+
+
+
+// constants in c++.
 
 int main(){
-    int m = 10;
-    print(m);
-    cout << endl << m;
+    int a,b;
+    const int c=10;
+    a=2;b=4;
+    c=12;
+    cout<< a*2<<b*2<<c*2;
     return 0;
 }
