@@ -160,11 +160,11 @@ using namespace std;
 
 // constants in c++.
 
-int main(){
-    int a,b;
-    const int c=10;
-    a=2;b=4;
-    c=12;
-    cout<< a*2<<b*2<<c*2;
-    return 0;
-}
+// int main(){
+//     int a,b;
+//     const int c=10;     // this constant c's value now cannot be changed.
+//     a=2;b=4;
+//     cout<< a*2<<b*2<<c*2;
+//     return 0;
+// }
+
